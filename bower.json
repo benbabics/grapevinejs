@@ -1,0 +1,14 @@
+{
+  "name": "socialproof",
+  "version": "0.0.2",
+  "dependencies": {
+    "backbone": "~1.0.0",
+    "backbone.localStorage": "~1.1.7",
+    "jquery": "1.9.1",
+    "modernizr": "~2.6.2",
+    "requirejs": "~2.1.5",
+    "requirejs-text": "~2.0.5",
+    "underscore": "~1.4.3"
+  },
+  "devDependencies": {}
+}

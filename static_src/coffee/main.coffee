@@ -25,15 +25,11 @@ requirejs.config
       deps: ['jquery']
       exports: 'jquery'
 
-    stripe_api:
-      exports: 'Stripe'
-
     underscore:
       exports: '_'
 
   paths:
     # APIs
-    stripe_api: 'https://js.stripe.com/v2/?1'
     # Libs
     jquery       : '../lib/bower_components/jquery/jquery'
     underscore   : '../lib/bower_components/underscore/underscore'
@@ -52,18 +48,15 @@ requirejs.config
     BaseService     : 'core/services/BaseService'
     BaseController  : 'core/controllers/BaseController'
     # Services
-    ResourceService : 'resource/main'
-    StripeService   : 'stripe/main'
-    UserService     : 'user/main'
     # Aliases
     helpers : 'core/helpers/'
 
 
 
 # System module
-define [
-  'app/main'
+require [
+  'foo/main'
 ],
-(App) ->
+(Foo) ->
 
-  new App().start()
+  new Foo().start()
